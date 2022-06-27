@@ -21,9 +21,20 @@
     <header class="header">
         <nav>
             <div class="nav-center">
-                <button class="btn search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <div class="btn-container">
+                    <button class="btn search-btn" aria-selected="false">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn" aria-selected="false">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                    <button class="btn" aria-selected="false">
+                        <a href="index.html">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                    </button>
+                </div>
+
                 <ul class="nav-menu">
                     <li class="menu-item" aria-selected="false"><a href="index.html">Explore</a></li>
                     <li class="menu-item" aria-selected="true"><a href="installed.html">Installed</a></li>
@@ -34,15 +45,6 @@
                 </button>
             </div>
         </nav>
-
-        <div class="search-bar">
-            <div class="serch-content">
-                <lable class="form-label">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </lable>
-                <input type="text" class="form-input">
-            </div>
-        </div>
 
         <div class="toggle-menu">
             <ul class="list">

@@ -21,9 +21,20 @@
     <header class="header">
         <nav>
             <div class="nav-center">
-                <button class="btn search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <div class="btn-container">
+                    <button class="btn search-btn" aria-selected="true">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn" aria-selected="false">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                    <button class="btn" aria-selected="false">
+                        <a href="index.html">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                    </button>
+                </div>
+                
                 <ul class="nav-menu">
                     <li class="menu-item" aria-selected="true"><a href="index.html">Explore</a></li>
                     <li class="menu-item" aria-selected="false"><a href="installed.html">Installed</a></li>

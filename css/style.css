@@ -154,12 +154,28 @@ button {
     display: inline-block;
 }
 
+.btn > a {
+    font-size: 1rem;
+}
+
 .btn:hover {
     background-color: var(--grey-100);
 }
 
 .btn.active {
     background-color: var(--grey-300);
+}
+
+.btn-container {
+    display: flex;
+    min-width: 2.3rem;
+    max-width: 2.3rem;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.btn[aria-selected=false] {
+    display: none;
 }
 
 /* Navbar */
