@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Software</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav-center">
+                <button class="btn search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="menu-item" aria-selected="false"><a href="index.html">Explore</a></li>
+                    <li class="menu-item" aria-selected="true"><a href="installed.html">Installed</a></li>
+                    <li class="menu-item" aria-selected="false"><a href="updates.html">Updates</a></li>
+                </ul>
+                <button class="btn hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="search-bar">
+            <div class="serch-content">
+                <lable class="form-label">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </lable>
+                <input type="text" class="form-input">
+            </div>
+        </div>
+
+        <div class="toggle-menu">
+            <ul class="list">
+                <li class="list-item"><a href="">sign in...</a></li>
+                <li class="list-item"><a href="">sign out</a></li>
+                <li class="list-item"><a href="">about software</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-overlay"></div>
+    </header>
+
+    <main class="showcase">
+        <h1>Installed</h1>
+    </main>
+
+    <main class="showcase2">
+        <h1>Hello world</h1>
+    </main>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
