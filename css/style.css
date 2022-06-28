@@ -132,11 +132,18 @@ button {
 }
 
 
-/* Utility clases */
+/* reusable clases */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin-inline: auto;
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
+}
+
+.section-title {
+    font-weight: 700;
+    letter-spacing: var(--letterSpacing);
+    line-height: 1;
+    margin-bottom: .8rem;
 }
 
 .btn {
@@ -176,6 +183,18 @@ button {
 
 .btn[aria-selected=false] {
     display: none;
+}
+
+.card {
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    padding: 1rem;
+    box-shadow: var(--shadow-2);
+}
+
+.card:hover .card-title h5 {
+    opacity: .7;
+    box-shadow: var(--shadow-3);
 }
 
 /* Navbar */
@@ -458,4 +477,99 @@ nav {
 
 .dot[aria-selected=true] {
     background-color: var(--white);
+}
+
+@media (max-width: 960px) {
+    .slider-item:nth-of-type(1),
+    .slider-item:nth-of-type(2),
+    .slider-item:nth-of-type(3),
+    .slider-item:nth-of-type(4),
+    .slider-item:nth-of-type(5) {
+        background-position: center center;
+    }
+}
+
+/* editors picks */
+.apps {
+    width: 100%;
+    height: 22vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.app .title {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-block: .3rem;
+}
+
+.app .ratings {
+    display: flex;
+    gap: .4rem;
+}
+
+.app .ratings > i {
+    font-size: .7rem;
+}
+
+
+@media (max-width: 1200px){
+    .apps {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .app:nth-of-type(8) {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px){
+    .apps {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .app:nth-of-type(8),
+    .app:nth-of-type(7) {
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .apps {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .app:nth-of-type(8),
+    .app:nth-of-type(7),
+    .app:nth-of-type(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    .apps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .app:nth-of-type(8),
+    .app:nth-of-type(7),
+    .app:nth-of-type(6),
+    .app:nth-of-type(5){
+        display: none;
+    }
 }

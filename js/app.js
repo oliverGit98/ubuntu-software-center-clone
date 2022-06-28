@@ -1,3 +1,46 @@
+const apps = [
+    {
+        "title": "discord",
+        "snippet": "All-in-one voice and text chat for gamers",
+        "icon": "./images/discord/icon.png"
+    },
+    {
+        "title": "inteliJ IDEA",
+        "snippet": "Capable & Ergonomic Java IDE",
+        "icon": "./images/idea/icon.png"
+    },
+    {
+        "title": "obs studio",
+        "snippet": "Free and open source software for live streaming and screen recording",
+        "icon": "./images/obs/icon.png"
+    },
+    {
+        "title": "telegram",
+        "snippet": "Fast. Secure. Powerful.",
+        "icon": "./images/telegram/icon.png"
+    },
+    {
+        "title": "foobar2000",
+        "snippet": "foobar2000 is an advanced freeware audio player.",
+        "icon": "./images/foobar2000/icon.png"
+    },
+    {
+        "title": "julia",
+        "snippet": "The Julia programming language",
+        "icon": "./images/julia/icon.png"
+    },
+    {
+        "title": "go",
+        "snippet": "The Julia programming language",
+        "icon": "./images/go/icon.png"
+    },
+    {
+        "title": "audacity",
+        "snippet": "Audio software for multi-track recording and editing",
+        "icon": "./images/audacity/icon.png"
+    }
+]
+
 //select elements
 const selectElement = (selecter) => {
     const element = document.querySelector(selecter);
@@ -77,6 +120,27 @@ prevBtn.addEventListener('click', () => {
         dot.setAttribute("aria-selected", false);
     })
     dots[count].setAttribute("aria-selected", true);
-    
+
 })
+
+window.addEventListener('DOMContentLoaded', () => {
+    const container = selectElement(".apps");
+    
+    apps.forEach((app) => {
+        const element = document.createElement('div')
+        element.classList.add('card', 'app');
+        element.innerHTML = `<img src="${app.icon}" alt="${app.title}-image"            class="icon">
+                                <h5 class="title">${app.title}</h5>
+                                <div class="ratings">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>`;
+
+        container.appendChild(element);
+    })
+})
+
 
