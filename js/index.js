@@ -141,7 +141,7 @@ const selectElement = (selecter) => {
     const element = document.querySelector(selecter);
 
     if(element) return element
-    throw err = new Error('Element does not exist or type selecter name correctly');
+    throw err = new Error(`Element ${selecter} does not exist or type selecter name correctly`);
 
 }
 
@@ -237,7 +237,6 @@ setInterval(() => {
 }, 5000)
 
 //Editors picks
-const ratingRange = 5;
 window.addEventListener('DOMContentLoaded', () => {
     const container = selectElement(".apps");
 
@@ -249,8 +248,6 @@ window.addEventListener('DOMContentLoaded', () => {
             ratings.unshift('fa-solid')
             ratings.pop();
         }
-
-        console.log(ratings);
 
         const element = document.createElement('div')
         element.classList.add('card', 'app');

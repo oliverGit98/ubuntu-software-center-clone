@@ -20,6 +20,7 @@ html {
     --black: #000;
     --white: #fff;
     --green: #22C55E;
+    --red: #EF4444;
 
     --backgroundColor: var(--grey-50);
     --textColor: var(--grey-900);
@@ -34,7 +35,7 @@ html {
     --letterSpacing: 1px;
     --transition: all 0.3s ease-in-out;
     --max-width: 1400px;
-    --fixed-width: 600px;
+    --fixed-width: 840px;
     --border: 1px solid var(--grey-400);
 
     /* box-shadows */
@@ -63,6 +64,7 @@ p {
     margin: 0;
     margin-bottom: 1rem;
     max-width: 40em;
+    font-size: .9rem;
 }
 
 h1, 
@@ -140,6 +142,13 @@ button {
     padding-inline: 1rem;
 }
 
+.section-center {
+    max-width: var(--fixed-width);
+    width: var(--fixed-width);
+    height: min-content;
+    margin-inline: auto;
+}
+
 .section-title {
     font-weight: 700;
     letter-spacing: var(--letterSpacing);
@@ -186,6 +195,27 @@ button {
     display: none;
 }
 
+.btn-regular {
+    width: 5.5rem;
+    height: 2.3rem;
+    color: var(--white);
+    border: none;
+    box-shadow: var(--shadow-2);
+    font-weight: 600;
+}
+
+.btn-regular[aria-label=success] {
+    background-color: var(--green);
+}
+
+.btn-regular[aria-label=danger] {
+    background-color: var(--red);
+}
+
+.btn-regular:hover {
+    opacity: .8;
+}
+
 .card {
     border: var(--border);
     border-radius: var(--borderRadius);
@@ -200,6 +230,11 @@ button {
 .card:hover .card-title,
 .card:hover > i{
     opacity: .7;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
 }
 
 /* Navbar */
@@ -517,11 +552,6 @@ nav {
     justify-content: center;
 }
 
-.icon {
-    width: 4rem;
-    height: 4rem;
-}
-
 .app .title {
     font-weight: 600;
     margin-block: .3rem;
@@ -644,5 +674,124 @@ nav {
 @media (max-width: 760px) {
     .categories {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Installed styles */
+.app-container {
+    width: 100%;
+}
+
+.single-app {
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 6rem 10rem 1fr 7rem;
+    background-color: var(--white);
+    border-bottom: var(--border);
+}
+
+.single-app .logo {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.single-app .title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.single-app .title > h5 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.single-app .snippet {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.single-app .snippet > p {
+    margin: 0;
+}
+
+.single-app .rm-btn {
+    height: 100%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-app .rm-btn > span {
+    font-size: .8rem;
+    color: var(--grey-700);
+}
+
+/* updates */
+section {
+    height: calc(100vh - 3rem);
+    position: relative;
+}
+
+.up-to-date {
+    position: fixed;
+    inset: 3rem 0 0 0;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-500);
+}
+
+.up-to-date .content h1 {
+    font-size: 10rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.up-to-date .content > p {
+    position: absolute;
+    bottom: 1rem;
+    margin: 0;
+}
+
+.refresh-animation {
+    position: fixed;
+    inset: 3rem 0 0 0;
+    display: grid;
+    place-items: center;
+}
+
+.content .refresh {
+    padding: .5rem;
+    animation: spinner 800ms linear infinite;
+}
+
+.content .refresh > i {
+    font-size: 3rem;
+}
+
+.content > h4 {
+    margin-bottom: .2rem;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
     }
 }
