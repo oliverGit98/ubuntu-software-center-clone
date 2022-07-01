@@ -16,6 +16,8 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/updates.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -26,7 +28,7 @@
                     <button class="btn search-btn" aria-selected="false">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <button class="btn" aria-selected="true">
+                    <button class="refresh-btn btn" aria-selected="true">
                         <i class="fa-solid fa-rotate-right"></i>
                     </button>
                     <button class="btn" aria-selected="false">
@@ -60,15 +62,15 @@
     </header>
 
     <section>
-        <div class="up-to-date">
+        <div class="up-to-date" aria-selected="true">
             <div class="content">
                 <h1><i class="fa-solid fa-check"></i></h1>
                 <h4>software is up to date</h4>
-                <p>Last Cheked: 10:00 PM</p>
+                <p id="time">Last Cheked: 10:00 PM</p>
             </div>
         </div>
 
-        <div class="refresh-animation">
+        <div class="refresh-animation" aria-selected="false">
             <div class="content">
                 <div class="refresh">
                     <i class="fa-solid fa-arrows-rotate"></i>

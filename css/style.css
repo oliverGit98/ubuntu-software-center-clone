@@ -735,16 +735,14 @@ nav {
 }
 
 /* updates */
-section {
-    height: calc(100vh - 3rem);
-    position: relative;
-}
-
 .up-to-date {
     position: fixed;
     inset: 3rem 0 0 0;
     display: grid;
     place-items: center;
+}
+
+.up-to-date[aria-selected=false] {
     display: none;
 }
 
@@ -775,6 +773,10 @@ section {
     inset: 3rem 0 0 0;
     display: grid;
     place-items: center;
+}
+
+.refresh-animation[aria-selected = false] {
+    display: none;
 }
 
 .content .refresh {
