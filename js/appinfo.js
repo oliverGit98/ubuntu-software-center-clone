@@ -9,6 +9,7 @@ const selectElement = (selecter) => {
 const hamburgerBtn = selectElement(".hamburger-btn");
 const toggleMenu = selectElement(".toggle-menu");
 const menuOverlay = selectElement(".menu-overlay");
+const backBtn = selectElement('.back-btn');
 const appTitle = selectElement("#header-title");
 const logo = selectElement("#logo");
 const appname = selectElement(".appname");
@@ -30,6 +31,11 @@ menuOverlay.addEventListener('click', (e) => {
     e.currentTarget.classList.remove('active');
     toggleMenu.classList.remove('show-toggle-menu')
     hamburgerBtn.classList.remove('active')
+})
+
+backBtn.addEventListener('click', () => {
+    const pathname = JSON.parse(localStorage.getItem('pathName'));
+    window.location.href = pathname;
 })
 
 const currentApp = JSON.parse(localStorage.getItem('currentApp'));

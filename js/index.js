@@ -1,5 +1,6 @@
 const apps = [
     {
+        "id": 0,
         "title": "discord",
         "snippet": "All-in-one voice and text chat for gamers",
         "icon": "./images/discord/icon.png",
@@ -9,6 +10,7 @@ const apps = [
         "images": ["./images/discord/image1.jpg", "./images/discord/image2.jpg", "./images/discord/image3.jpg", "./images/discord/image4.jpg", "./images/discord/image5.webp"]
     },
     {
+        "id": 1,
         "title": "intelliJ IDEA",
         "snippet": "Capable & Ergonomic Java IDE",
         "icon": "./images/idea/icon.png",
@@ -18,6 +20,7 @@ const apps = [
         "images": ["./images/idea/image1.jpg", "./images/idea/image2.jpg", "./images/idea/image3.png"]
     },
     {
+        "id": 2,
         "title": "obs studio",
         "snippet": "Free and open source software for live streaming and screen recording",
         "icon": "./images/obs/icon.png",
@@ -27,6 +30,7 @@ const apps = [
         "images": ["./images/obs/image1.jpg", "./images/obs/image2.webp", "./images/obs/image3.jpg"]
     },
     {
+        "id": 3,
         "title": "Stellarium",
         "snippet": "Desktop Planetarium",
         "icon": "./images/stellarium/icon.png",
@@ -36,6 +40,7 @@ const apps = [
         "images": ["./images/stellarium/image1.jpg", "./images/stellarium/image2.png", "./images/stellarium/image3.jpg", "./images/stellarium/image4.jpg"]
     },
     {
+        "id": 4,
         "title": "telegram",
         "snippet": "Fast. Secure. Powerful.",
         "icon": "./images/telegram/icon.png",
@@ -45,6 +50,7 @@ const apps = [
         "images": ["./images/telegram/image1.jpg", "./images/telegram/image2.webp", "./images/telegram/image3.jpeg"]
     },
     {
+        "id": 5,
         "title": "foobar2000",
         "snippet": "foobar2000 is an advanced freeware audio player.",
         "icon": "./images/foobar2000/icon.png",
@@ -54,6 +60,7 @@ const apps = [
         "images": "./images/foobar2000/image.jpg"
     },
     {
+        "id": 6,
         "title": "julia",
         "snippet": "The Julia programming language",
         "icon": "./images/julia/icon.png",
@@ -63,6 +70,7 @@ const apps = [
         "images": ["./images/julia/image1.jpg", "./images/julia/image2.png", "./images/julia/image3.webp", "./images/julia/image4.jpeg"]
     },
     {
+        "id": 7,
         "title": "audacity",
         "snippet": "Audio software for multi-track recording and editing",
         "icon": "./images/audacity/icon.png",
@@ -266,7 +274,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         const element = document.createElement('div')
-        element.setAttribute('data-id', index)
         element.classList.add('card', 'app');
         element.innerHTML = `<img src="${app.icon}" alt="${app.title}-image" class="icon">
                                 <h5 class="title card-title">${app.title}</h5>
@@ -286,8 +293,10 @@ window.addEventListener('DOMContentLoaded', () => {
     
     applications.forEach((app, index) => {
         app.addEventListener('click', () => {
+            const pathname = window.location.pathname;
             const currentApp = apps[index];
             localStorage.setItem('currentApp', JSON.stringify(currentApp));
+            localStorage.setItem('pathName', JSON.stringify(pathname));
 
             window.location.href = './appinfo.html';
         })
