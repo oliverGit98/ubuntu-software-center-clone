@@ -146,8 +146,8 @@ window.addEventListener('DOMContentLoaded', () => {
             const pathname = window.location.pathname;
             const id = app.dataset.id;
             const currentApp = apps[id];
-            localStorage.setItem('currentApp', JSON.stringify(currentApp));
             localStorage.setItem('pathName', JSON.stringify(pathname));
+            localStorage.setItem('currentApp', JSON.stringify(currentApp));
 
             window.location.href = './appinfo.html';
         })
