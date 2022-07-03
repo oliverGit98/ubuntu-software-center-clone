@@ -5,7 +5,8 @@ const apps = [
         "icon": "./images/discord/icon.png",
         "installed": true,
         "rating": 4,
-        "size": "150 MB"
+        "size": "150 MB",
+        "images": ["./images/discord/image1.jpg", "./images/discord/image2.jpg", "./images/discord/image3.jpg", "./images/discord/image4.jpg", "./images/discord/image5.webp"]
     },
     {
         "title": "intelliJ IDEA",
@@ -13,7 +14,8 @@ const apps = [
         "icon": "./images/idea/icon.png",
         "installed": true,
         "rating": 5,
-        "size": "930 MB"
+        "size": "930 MB",
+        "images": ["./images/idea/image1.jpg", "./images/idea/image2.jpg", "./images/idea/image3.png"]
     },
     {
         "title": "obs studio",
@@ -21,7 +23,8 @@ const apps = [
         "icon": "./images/obs/icon.png",
         "installed": false,
         "rating": 3,
-        "size": "570 MB"
+        "size": "570 MB",
+        "images": ["./images/obs/image1.jpg", "./images/obs/image2.webp", "./images/obs/image3.jpg"]
     },
     {
         "title": "Stellarium",
@@ -29,7 +32,8 @@ const apps = [
         "icon": "./images/stellarium/icon.png",
         "installed": true,
         "rating": 4,
-        "size": "140 MB"
+        "size": "140 MB",
+        "images": ["./images/stellarium/image1.jpg", "./images/stellarium/image2.png", "./images/stellarium/image3.png", "./images/stellarium/image4.jpg", "./images/stellarium/image5.png"]
     },
     {
         "title": "telegram",
@@ -37,7 +41,8 @@ const apps = [
         "icon": "./images/telegram/icon.png",
         "installed": true,
         "rating": 5,
-        "size": "240 MB"
+        "size": "240 MB",
+        "images": ["./images/telegram/image1.jpg", "./images/telegram/image2.webp", "./images/telegram/image3.jpeg"]
     },
     {
         "title": "foobar2000",
@@ -45,7 +50,8 @@ const apps = [
         "icon": "./images/foobar2000/icon.png",
         "installed": false,
         "rating": 4,
-        "size": "160 MB"
+        "size": "160 MB",
+        "images": "./images/foobar2000/image.jpg"
     },
     {
         "title": "julia",
@@ -53,7 +59,8 @@ const apps = [
         "icon": "./images/julia/icon.png",
         "installed": false,
         "rating": 3,
-        "size": "380 MB"
+        "size": "380 MB",
+        "images": ["./images/julia/image1.jpg", "./images/julia/image2.png", "./images/julia/image3.webp", "./images/julia/image4.jpeg"]
     },
     {
         "title": "audacity",
@@ -61,7 +68,8 @@ const apps = [
         "icon": "./images/audacity/icon.png",
         "installed": false,
         "rating": 4,
-        "size": "160 MB"
+        "size": "160 MB",
+        "images": "./images/audacity/image.jpg"
     }
 ]
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Software</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/appinfo.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav-center">
+                <div class="btn-container">
+                    <button class="btn search-btn" aria-selected="false">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn" aria-selected="false">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                    <button class="btn" aria-selected="true">
+                        <a href="index.html">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <h5 class="header-title" id="header-title">Hello World</h5>
+
+                <button class="btn hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="toggle-menu">
+            <ul class="list">
+                <li class="list-item"><a href="">sign in...</a></li>
+                <li class="list-item"><a href="">sign out</a></li>
+                <li class="list-item"><a href="">about software</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-overlay"></div>
+    </header>
+
+    <section class="section-center">
+        <div class="main-data">
+            <div class="logo">
+                <img id="logo" src="./images/discord/icon.png" alt="" class="icon">
+            </div>
+            <div class="title">
+                <h5 class="appname">Hello World</h5>
+                <p class="snippet">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="ratings">
+                <!-- <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(345)</span> -->
+            </div>
+        </div>
+
+        <div class="install-btn">
+            <button class="btn btn-regular" id="app-btn" aria-label="success">install</button>
+        </div>
+
+        <div class="image-container" aria-selected="true">
+            <div class="main-image">
+                <img id="main-image" src="./images/slider-image4.webp" alt="">
+            </div>
+            <div class="side-images" aria-selected="true">
+                <!-- <div class="side-image" aria-selected="true">
+                    <img src="./images/slider-image1.jpg" alt="">
+                </div>
+                <div class="side-image" aria-selected="false">
+                    <img src="./images/slider-image1.jpg" alt="">
+                </div>
+                <div class="side-image" aria-selected="false">
+                    <img src="./images/slider-image1.jpg" alt="">
+                </div>
+                <div class="side-image" aria-selected="false">
+                    <img src="./images/slider-image1.jpg" alt="">
+                </div>
+                <div class="side-image" aria-selected="false">
+                    <img src="./images/slider-image1.jpg" alt="">
+                </div> -->
+            </div>
+        </div>
+
+        <section class="about-app">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae aspernatur corrupti, omnis dolore sapiente amet autem pariatur facere culpa maiores rem id libero aliquam natus dolores nesciunt expedita fugit non aliquid? Libero mollitia dolorum, dicta pariatur vero voluptatum eligendi asperiores animi perferendis possimus. Soluta quaerat assumenda numquam necessitatibus, ratione omnis repudiandae recusandae vel asperiores reiciendis voluptatem quam, rem consequuntur consequatur voluptate dolor architecto nemo tempora provident obcaecati. Odit et consequuntur facilis dignissimos harum nisi ab aliquam, alias quam iste ad sunt, aspernatur eaque aperiam dolore. Illo nemo ipsa consectetur rerum itaque distinctio, reiciendis alias laudantium quidem voluptatum repellendus ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odit quae similique a quidem id debitis, provident eaque! Et totam possimus molestias, velit ullam reprehenderit ut officiis expedita rem temporibus necessitatibus tenetur delectus, impedit quo quibusdam magni magnam tempore, sequi corporis! Vel, ab officia doloremque architecto ex dicta qui fugit.
+            </p>
+        </section>
+
+        <section class="details">
+            <h4 class="section-title">Details</h4>
+
+            <div class="detail">
+                <p class="label">Channel</p>
+                <p class="info">Latest/Stable</p>
+            </div>
+            <div class="detail">
+                <p class="label">Version</p>
+                <p class="info">4.2.5</p>
+            </div>
+            <div class="detail">
+                <p class="label">License</p>
+                <button class="btn btn-regular" aria-label="success">Free</button>
+            </div>
+            <div class="detail">
+                <p class="label">Developer</p>
+                <p class="info">Oliver dev</p>
+            </div>
+            <div class="detail">
+                <p class="label">Source</p>
+                <p class="info">oliverdev.net</p>
+            </div>
+            <div class="detail">
+                <p class="label">Download size</p>
+                <p class="info">438MB</p>
+            </div>
+        </section>
+
+        
+    </section>
+</body>
+</html>
